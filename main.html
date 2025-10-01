@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelson Castro Andrews: MLOps Engineer | Data Pipelines (Airflow) & FastAPI</title>
+  <meta name="description" content="Data Scientist y Desarrollador de Software. Experto en orquestación de Pipelines de Datos con Airflow, despliegue en tiempo real con FastAPI y modelos de Redes Neuronales (RNA). Portafolio de MLOps y OSINT.">
+  <meta name="keywords" content="MLOps Engineer, Data Pipelines, Airflow DAGs, FastAPI, Redes Neuronales, Data Scientist, OSINT, Ciberseguridad, Python, Despliegue ML">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            body: ['Inter', 'sans-serif'],
+            headline: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            background: '#020817', // dark theme background
+            foreground: '#e2e8f0', // dark theme text
+            card: '#0f172a',
+            'card-foreground': '#e2e8f0',
+            popover: '#0f172a',
+            'popover-foreground': '#e2e8f0',
+            primary: {
+              DEFAULT: '#f97316',
+              foreground: '#f8fafc',
+            },
+            secondary: {
+              DEFAULT: '#334155',
+              foreground: '#f8fafc',
+            },
+            muted: {
+              DEFAULT: '#334155',
+              foreground: '#94a3b8',
+            },
+            accent: {
+              DEFAULT: '#f97316',
+              foreground: '#f8fafc',
+            },
+            border: '#1e293b',
+            input: '#1e293b',
+            ring: '#f97316',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+        background-color: #020817;
+        color: #e2e8f0;
+        font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- ===== Header ===== -->
+  <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-6">
+      <a href="#" class="font-bold">Nelson Alejandro Castro Andrews</a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#projects" class="transition-colors hover:text-primary">Proyectos</a>
+        <a href="#skills" class="transition-colors hover:text-primary">Habilidades</a>
+        <a href="#contact" class="transition-colors hover:text-primary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero Section ===== -->
+    <section class="text-center py-24 sm:py-32 lg:py-40 container mx-auto px-4 md:px-6">
+      <img
+        src="\public\nelson.jpg"
+        alt="Nelson Alejandro Castro Andrews"
+        width="200"
+        height="200"
+        class="rounded-full mx-auto mb-8 border-4 border-primary shadow-lg"
+      />
+      <h1 class="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-primary">
+        Convirtiendo Datos Crudos en Software de Negocio y Decisión.
+      </h1>
+      <p class="mt-6 text-lg leading-8 text-slate-300 max-w-3xl mx-auto">
+        Soy <span class="font-bold">Nelson Alejandro Castro Andrews</span>, Ingeniero de Sistemas, Data Engineer, Data Analytics, Data Scientist y Analista de Ciberseguridad. Domino Big Data, MLOps, CI/CD para ML, Docker, Kubernetes y DevOps, Tecnologia BI, Estructuración de proyectos de ML y La Arquitectura, orquestación y despliegue de <span class="font-semibold text-primary/90">Pipelines de ML robustos</span> utilizando <span class="font-semibold text-primary/90">Airflow, FastAPI</span> y <span class="font-semibold text-primary/90">Prefect</span>.
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="#projects" class="rounded-md bg-accent px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm hover:bg-accent/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+          🚀 Ver Proyectos MLOps y Despliegue
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="py-24 sm:py-32 container mx-auto px-4 md:px-6">
+      <div class="text-center">
+        <h2 class="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+          Mis Proyectos Clave
+        </h2>
+        <p class="mt-4 text-lg leading-8 text-slate-400">
+          Arquitectura, MLOps y Disrupción
+        </p>
+      </div>
+      <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Project 1 -->
+        <div class="flex flex-col rounded-lg border border-border bg-card text-card-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold leading-none tracking-tight">MLOps: Orquestación y Despliegue</h3>
+            <p class="text-sm text-muted-foreground mt-1">Armegas/pipeline-flow-api</p>
+          </div>
+          <div class="p-6 pt-0 flex-grow">
+            <p class="text-slate-300 mb-4">Arquitectura de Data Pipelines para ML. Sistema de extremo a extremo para ingesta, transformación, scoring y despliegue final a través de un endpoint de FastAPI para inferencia en tiempo real.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">Airflow</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">FastAPI</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">Python</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">MLOps</span>
+            </div>
+          </div>
+          <div class="flex items-center p-6 pt-0">
+            <a href="https://github.com/Armegas/pipeline-flow-api" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+              Ver en GitHub
+            </a>
+          </div>
+        </div>
+        <!-- Otros proyectos irían aquí... -->
+        <div class="flex flex-col rounded-lg border border-border bg-card text-card-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold leading-none tracking-tight">MLOps: Trazabilidad y Gestión</h3>
+            <p class="text-sm text-muted-foreground mt-1">Armegas/iris-mlops-bot</p>
+          </div>
+          <div class="p-6 pt-0 flex-grow">
+            <p class="text-slate-300 mb-4">Caso práctico del ciclo de vida del modelo (MLOps) usando el dataset Iris. Incluye trazabilidad con MLflow, una UI interactiva con Streamlit y model serving con FastAPI.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">MLflow</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">Streamlit</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">FastAPI</span>
+            </div>
+          </div>
+          <div class="flex items-center p-6 pt-0">
+            <a href="https://github.com/Armegas/iris-mlops-bot" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+              Ver en GitHub
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-lg border border-border bg-card text-card-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold leading-none tracking-tight">Software & Servicios de Inteligencia</h3>
+            <p class="text-sm text-muted-foreground mt-1">Armegas/osint-portafolio</p>
+          </div>
+          <div class="p-6 pt-0 flex-grow">
+            <p class="text-slate-300 mb-4">Solución tipo SaaS para clientes que requieren informes de OSINT y auditorías de reputación online. Aplicación de ingeniería y ciencia de datos a la Ciberseguridad y Evidencia Digital Legal.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">OSINT</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">SaaS</span>
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground">Ciberseguridad</span>
+            </div>
+          </div>
+          <div class="flex items-center p-6 pt-0">
+            <a href="https://github.com/Armegas/osint-portafolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+              Ver en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section id="skills" class="py-24 sm:py-32 bg-card border-y">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center">
+          <h2 class="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+            Mi Stack de Ingeniería
+          </h2>
+          <p class="mt-4 text-lg leading-8 text-muted-foreground">
+            Desde la Orquestación hasta el Despliegue en Tiempo Real
+          </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+          <!-- Skill 1 -->
+          <div class="rounded-lg border border-border bg-card text-card-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6 flex flex-row items-center gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12a10 10 0 0 0 10 10V12H12z"/></svg>
+              <h3 class="text-xl font-semibold text-primary">Orquestación y Data Pipelines</h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-slate-300">Diseño, construcción y monitoreo de Data Pipelines (ETL/ELT) modulares y tolerantes a fallos con Apache Airflow. Creación de DAGs complejos para automatizar el ciclo de vida de modelos de Machine Learning (MLOps).</p>
+            </div>
+          </div>
+          <!-- Skill 2 -->
+          <div class="rounded-lg border border-border bg-card text-card-foreground shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6 flex flex-row items-center gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.54.96-1.64.54-2.44-.42-.8-.01-1.73.54-2.44.55-.71.54-1.64-.01-2.44-.55-.71-1.25-1.9-.54-2.44.71-.54 2-2 5-2s4.29 1.46 5 2c.71.54.55 1.73-.01 2.44.56.71.56 1.64.01 2.44-.55.8-.13 1.9.54 2.44.71.54 2 2 5 2s-2-3.74-2-5-.5-5-2-5-2 5-2 5Z"/><path d="M2 21h20"/></svg>
+              <h3 class="text-xl font-semibold text-primary">Despliegue y APIs en Tiempo Real</h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-slate-300">Desarrollo de APIs de alto rendimiento y baja latencia con FastAPI para el model serving. Implementación de arquitecturas robustas para asegurar el despliege en tiempo real de resultados y predicciones.</p>
+            </div>
+          </div>
+          <!-- Otros skills... -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer id="contact" class="border-t border-border/40">
+    <div class="container mx-auto flex flex-col items-center justify-center gap-4 py-10 text-center md:flex-row md:justify-between px-4 md:px-6">
+      <p class="text-sm text-muted-foreground">&copy; 2024 Nelson Castro Andrews. Todos los derechos reservados.</p> <p>nelson.pptcol@gmail.com / +584121463904</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/Armegas" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nelson-alejandro-castro-andrews-01a439254" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
