@@ -55,8 +55,8 @@ export function ProjectsSection() {
         </p>
       </div>
       <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <Card key={index} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300">
+        {projects.map((project) => (
+          <Card key={project.repo} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
               <CardTitle className="text-xl">{project.title}</CardTitle>
               <CardDescription>{project.repo}</CardDescription>

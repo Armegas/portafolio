@@ -27,7 +27,7 @@ const skills = [
 
 export function SkillsSection() {
   return (
-    <Container className="bg-card border-y">
+    <Container id="skills" className="bg-card border-y">
       <div className="text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
           Mi Stack de Ingeniería
@@ -37,7 +37,7 @@ export function SkillsSection() {
         </p>
       </div>
       <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-        {skills.map((skill) => (
+        {skills.map((skill, index) => (
           <Card key={skill.title} className="shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-card">
             <CardHeader className="flex flex-row items-center gap-4">
               {skill.icon}

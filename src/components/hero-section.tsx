@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <Container className="text-center py-24 sm:py-32 lg:py-40">
       <Image
-        src="/professional_profile_picture_of_a_man_in_a_shirt_and_tie_with_a_subtle_gradient_background_digital_art.png"
+        src="/nelson.png"
         alt="Nelson Castro Andrews"
         width={160}
         height={160}
@@ -18,7 +18,7 @@ export function HeroSection() {
         Convirtiendo Datos Crudos en Software de Negocio y Decisión.
       </h1>
       <p className="mt-6 text-lg leading-8 text-foreground/80 max-w-3xl mx-auto">
-        Soy <span className="font-bold">Nelson Castro Andrews</span>, Ingeniero de Sistemas y Científico de Datos. Domino la arquitectura, orquestación y despliegue de <span className="font-semibold text-primary/90">Pipelines de ML robustos</span> utilizando <span className="font-semibold text-primary/90">Airflow</span> y <span className="font-semibold text-primary/90">FastAPI</span>.
+        Soy <span className="font-bold">Nelson Castro Andrews</span>, Ingeniero de Sistemas y Científico de Datos. Experto en la arquitectura y despliegue de <span className="font-semibold text-primary/90">Pipelines de ML robustos</span> con <span className="font-semibold text-primary/90">Airflow, FastAPI y Prefect</span>.
       </p>
       <div className="mt-10 flex items-center justify-center gap-x-6">
         <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
