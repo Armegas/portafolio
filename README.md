@@ -29,7 +29,8 @@ Si deseas ejecutar este proyecto en tu entorno local, sigue estos pasos:
     npm install
     ```
 3.  **Ejecuta el servidor de desarrollo:**
-    ```bash     npm run dev
+    ```bash     
+    npm run dev
     ```
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado (o el puerto que tengas configurado).
